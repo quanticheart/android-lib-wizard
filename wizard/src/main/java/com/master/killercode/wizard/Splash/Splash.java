@@ -95,9 +95,9 @@ public class Splash extends AppCompatActivity {
         Boolean splash = false;
         if (extras != null && extras.containsKey("namesplash")) {
             name = extras.getString("namesplash");
-            splash = prefs.getSplashFinished(name);
+            splash = prefs.getStatusFinishedFrom(name);
             if (!splash) {
-                prefs.setSplashFinish(name);
+                prefs.setStatusFinish(name);
             }
         }
 

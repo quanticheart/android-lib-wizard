@@ -26,16 +26,16 @@ public class MainActivity extends AppCompatActivity {
 
         initVars();
         initActions();
-        GetWizardStatus wPrefs = new GetWizardStatus(MainActivity.this);
-        Boolean w = wPrefs.getWizardFinished("init");
+//        GetWizardStatus wPrefs = new GetWizardStatus(MainActivity.this);
+//        Boolean w = wPrefs.getWizardFinished("init");
 
         TextView textView = findViewById(R.id.tx);
-
-        if (w) {
-            textView.setText("Finished!");
-        } else {
-            textView.setText("No visualized");
-        }
+//
+//        if (w) {
+//            textView.setText("Finished!");
+//        } else {
+//            textView.setText("No visualized");
+//        }
 
 
 //        String cor1 = Integer.toHexString(getResources().getColor(R.color.ColorSupremeWhite));

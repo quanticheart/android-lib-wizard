@@ -12,26 +12,37 @@ public class GetWizardStatus {
         Prefs = context.getSharedPreferences(CONSTANTE_SHAREDPREFS_DO_PROJETO, Context.MODE_PRIVATE);
     }
 
-    public Boolean getWizardFinished(String nameWizard) {
-        return Prefs.getBoolean(nameWizard, false);
-    }
-
-    public void setWizardFinish(String nameWizard) {
-        SharedPreferences.Editor editor = Prefs.edit();
-        editor.putBoolean(nameWizard, true);
-        editor.commit();
-    }
+//    public Boolean getWizardFinished(String nameWizard) {
+//        return Prefs.getBoolean(nameWizard, false);
+//    }
+//
+//    public void setWizardFinish(String nameWizard) {
+//        SharedPreferences.Editor editor = Prefs.edit();
+//        editor.putBoolean(nameWizard, true);
+//        editor.commit();
+//    }
 
     //===========================================================================================================================
 
-    public Boolean getSplashFinished(String nameSplash) {
-        return Prefs.getBoolean(nameSplash, false);
+//    public Boolean getSplashFinished(String nameSplash) {
+//        return Prefs.getBoolean(nameSplash, false);
+//    }
+//
+//    public void setSplashFinish(String nameSplash) {
+//        SharedPreferences.Editor editor = Prefs.edit();
+//        editor.putBoolean(nameSplash, true);
+//        editor.commit();
+//    }
+
+    public Boolean getStatusFinishedFrom(String name) {
+        return Prefs.getBoolean(name, false);
     }
 
-    public void setSplashFinish(String nameSplash) {
+    public void setStatusFinish(String nameSplash) {
         SharedPreferences.Editor editor = Prefs.edit();
         editor.putBoolean(nameSplash, true);
         editor.commit();
     }
+
 
 }

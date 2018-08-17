@@ -9,7 +9,7 @@ import android.widget.TextView;
 import com.master.killercode.wizard.Splash.SplashActivity;
 import com.master.killercode.wizard.Wizard.WizardActivity;
 import com.master.killercode.wizard.Wizard.WizardPageModel;
-import com.master.killercode.wizard.Preferences;
+import com.master.killercode.wizard.GetWizardStatus;
 
 import java.util.ArrayList;
 
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         initVars();
         initActions();
-        Preferences wPrefs = new Preferences(MainActivity.this);
+        GetWizardStatus wPrefs = new GetWizardStatus(MainActivity.this);
         Boolean w = wPrefs.getWizardFinished("init");
 
         TextView textView = findViewById(R.id.tx);

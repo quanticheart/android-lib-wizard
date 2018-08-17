@@ -10,7 +10,7 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.master.killercode.wizard.Preferences;
+import com.master.killercode.wizard.GetWizardStatus;
 import com.master.killercode.wizard.R;
 import com.master.killercode.wizard.Wizard.WizardActivity;
 import com.master.killercode.wizard.Wizard.WizardPageModel;
@@ -27,7 +27,7 @@ public class Splash extends AppCompatActivity {
     private Activity activity;
     private Bundle extras;
     private int splashSeconds = 3000;
-    private Preferences prefs;
+    private GetWizardStatus prefs;
     private Class afterSplash;
 
     //
@@ -49,7 +49,7 @@ public class Splash extends AppCompatActivity {
         ll = findViewById(R.id.llControl);
         tv = findViewById(R.id.tv);
         img = findViewById(R.id.img);
-        prefs = new Preferences(activity);
+        prefs = new GetWizardStatus(activity);
         extras = getIntent().getExtras();
 
         setResorces(ll, tv, img);
@@ -97,7 +97,7 @@ public class Splash extends AppCompatActivity {
             name = extras.getString("namesplash");
             splash = prefs.getSplashFinished(name);
             if (!splash) {
-                prefs.setSplashFinished(name);
+                prefs.setSplashFinish(name);
             }
         }
 

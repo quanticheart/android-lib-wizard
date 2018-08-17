@@ -36,7 +36,7 @@ public class ColorBox {
             raw = "#" + raw;
         }
         int finalcolor = Color.parseColor(raw);
-        Log.w("ColorBox", Integer.toHexString(finalcolor));
+//        Log.w("ColorBox", Integer.toHexString(finalcolor));
         return finalcolor;
     }
 

@@ -48,7 +48,7 @@ public class WizardActivity {
     }
 
     public void setWizardFinished(String nameWizard) {
-        SharedPreferences pref = activity.getSharedPreferences(nameWizard, Context.MODE_PRIVATE);
+        SharedPreferences pref = activity.getSharedPreferences(wizard, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = pref.edit();
         editor.putBoolean(nameWizard, true);
         editor.commit();

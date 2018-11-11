@@ -147,7 +147,7 @@ public class WizardSlideAdapter extends PagerAdapter {
 
         inflater = (LayoutInflater) activity.getSystemService(activity.LAYOUT_INFLATER_SERVICE);
         assert inflater != null;
-        View view = inflater.inflate(R.layout._01_activity_wizard_itens, container, false);
+        View view = inflater.inflate(R.layout.wizard_item, container, false);
         //
         linearLayout = view.findViewById(R.id.slideLinearLayout);
         img = view.findViewById(R.id.slideImage);

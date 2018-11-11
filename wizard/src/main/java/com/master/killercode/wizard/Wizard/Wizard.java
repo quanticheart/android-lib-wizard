@@ -55,7 +55,7 @@ public class Wizard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout._01_activity_wizard);
+        setContentView(R.layout.wizard);
         //init
         activity = Wizard.this;
 

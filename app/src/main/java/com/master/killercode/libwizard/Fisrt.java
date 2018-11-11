@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import com.master.killercode.wizard.Splash.SplashActivity;
+import com.master.killercode.wizard.Splash.Create.SplashActivity;
 import com.master.killercode.wizard.Wizard.WizardPageModel;
 
 import java.util.ArrayList;

@@ -6,10 +6,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.master.killercode.wizard.Splash.SplashActivity;
+import com.master.killercode.wizard.Splash.Create.SplashActivity;
 import com.master.killercode.wizard.Wizard.WizardActivity;
 import com.master.killercode.wizard.Wizard.WizardPageModel;
-import com.master.killercode.wizard.GetWizardStatus;
 
 import java.util.ArrayList;
 
@@ -23,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        new SplashHelper(MainActivity.this);
 
         initVars();
         initActions();

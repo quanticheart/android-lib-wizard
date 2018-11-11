@@ -43,7 +43,7 @@ public class Splash extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout._00_splash);
+        setContentView(R.layout.splash);
 
         activity = Splash.this;
         ll = findViewById(R.id.llControl);
